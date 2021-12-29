@@ -45,11 +45,12 @@
 // });
 
 const http = require('http');
+const port = process.env.PROT || 3000;
 
 var server = http.createServer(function(req, res) {
   res.writeHead(200, {ContentType: 'text/plain'});
   res.end("test");
 });
 
-server.listen(3000); // works fine, on the same machine
+server.listen(port); // works fine, on the same machine
 
