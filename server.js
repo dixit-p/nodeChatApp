@@ -3,7 +3,7 @@ const express = require('express');
 
 const app = express();
 
-const hostname = "0.0.0.0";
+const hostname = "dixit-node-chat-app.herokuapp.com";
  
 const server = http.createServer(app);
 const port = process.env.PROT || 3000;
