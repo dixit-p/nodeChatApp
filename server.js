@@ -51,5 +51,5 @@ var server = http.createServer(function(req, res) {
   res.end("test");
 });
 
-server.listen(3000, '0.0.0.0'); // works fine, on the same machine
+server.listen(3000); // works fine, on the same machine
 
