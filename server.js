@@ -3,6 +3,8 @@ const express = require('express');
 
 const app = express();
 
+const hostname = "0.0.0.0";
+ 
 const server = http.createServer(app);
 const port = process.env.PROT || 3000;
 app.use(express.static(__dirname+'/public'));
@@ -38,6 +40,6 @@ io.on('connection',(socket)=>{
 
 /* socket.io setup End */
 
-server.listen(port,()=>{
+server.listen(port,hostname,()=>{
     console.log('Server started at '+port);
 });
