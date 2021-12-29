@@ -1,0 +1,32 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "This is a website for Ristorante Con Fusion",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run watch:all",
+    "test": "nodemon server.js",
+    "lite": "lite-server",
+    "scss": "sass public/styles/index.scss public/styles/index.css",
+    "watch:scss": "onchange 'public/styles/index.scss' -- npm run scss",
+    "watch:all": "npm-run-all --parallel watch:scss lite"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-social": "^5.1.1",
+    "express": "^4.17.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.12.9",
+    "sass": "^1.45.1",
+    "socket.io": "^4.4.0"
+  }
+}
