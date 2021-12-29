@@ -40,6 +40,7 @@ io.on('connection',(socket)=>{
 
 /* socket.io setup End */
 
-server.listen(port,hostname,()=>{
+server.listen(port,"127.0.0.1",()=>{
     console.log('Server started at '+port);
 });
+"
