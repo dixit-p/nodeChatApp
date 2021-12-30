@@ -112,6 +112,7 @@ main{
                     border-radius: 10px 50px 50px 10px;
                     p{
                         font-size: $fsize;
+                        word-wrap: break-word;
                     }
                 }
                 div.outgoing{

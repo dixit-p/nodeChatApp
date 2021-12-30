@@ -107,6 +107,7 @@ main div.container div.chat-window div.chats div.message {
 }
 main div.container div.chat-window div.chats div.message p {
   font-size: 16px;
+  word-wrap: break-word;
 }
 main div.container div.chat-window div.chats div.outgoing {
   margin-left: auto;
