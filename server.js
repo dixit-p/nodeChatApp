@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
  
 const server = http.createServer(app);
-const port = process.env.PROT || 3002;
+var port = process.env.PORT || 3002;
 app.use(express.static(__dirname+'/public'));
 
 app.get('/',(req,res)=>{
