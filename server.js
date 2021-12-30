@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
  
 const server = http.createServer(app);
-const port = process.env.PROT || 3000;
+const port = process.env.PROT || 3002;
 app.use(express.static(__dirname+'/public'));
 
 app.get('/',(req,res)=>{
@@ -38,7 +38,7 @@ io.on('connection',(socket)=>{
 
 /* socket.io setup End */
 
-server.listen(process.env.PROT || 3000,()=>{
+server.listen(port,()=>{
     console.log('Server started at '+port);
 });
 
